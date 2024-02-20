@@ -8,11 +8,21 @@
 <body>
     <script>
         var ano = 2023;
-        alert("A idade de Diego é?");
         document.write("A idade de Diego é " + (18+13) + "<br>");
         document.write("Diego nasceu em " + (ano - 31) + "<br>");
         ano = 2024;
-        document.write("Laura nasceu em " + (ano - 27));
+        document.write("Laura nasceu em " + (ano - 27) + "<br>");
+
+
+        var idadeLaura = 27;
+        var idadeDiego = 31;
+        var idadeJoe = 4;
+
+        var media = (idadeLaura + idadeDiego + idadeJoe) / 3;
+        document.write ("A média das idades é " + Math.round(media));
+        
+        var nome = "Diego";
+        document.write("<br>A idade de " + nome + " é " + idadeDiego)
     </script>
 </body>
 </html>
