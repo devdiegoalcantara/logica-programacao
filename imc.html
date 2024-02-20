@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write ("<br><br>");
+        };
+        function imprima (frase) {
+            document.write (frase);
+            pulaLinha();
+        };
+        function calcularImc (altura, peso) {
+          var imc = peso / (altura * altura);
+          return Math.round(imc);
+        }
+        
+        var imcFlavio = calcularImc (1.71, 73);
+        var imcAmigo = calcularImc (1.72, 68);
+
+        imprima ("O Imc do Flávio é = " + imcFlavio);
+        imprima ("O Imc do Amigo é = " + imcAmigo);
+        
+        /* 
+        var pesoFlavio = 73;
+        var alturaFlavio = 1.71;
+
+        var imcFlavio = pesoFlavio / (alturaFlavio * alturaFlavio);
+         imprima ("O IMC do Flávio é = " + Math.round(imcFlavio));
+
+        var pesoAmigo = 68;
+        var alturaAmigo = 1.72;
+        var imcAmigo = pesoAmigo / (alturaAmigo * alturaAmigo);
+        imprima ("O IMC do amigo é = " + Math.round(imcAmigo));
+        */
+
+
+
+    </script>
+    
+</body>
+</html>
