@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol</title>
+</head>
+
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>");
+        };
+        function imprima(frase) {
+            document.write(frase);
+            pulaLinha();
+        };
+
+        var vitorias = parseInt(prompt("Entre com o número de vitórias."));
+
+        var empates = parseInt(prompt("Entre com o número de empates."));
+
+        var pontos = vitorias * 3 + empates;
+
+        imprima("Os pontos do seu time são " + pontos);
+
+    </script>
+
+</body>
+
+</html>
